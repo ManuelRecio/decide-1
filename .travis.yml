@@ -24,5 +24,17 @@ script:
   - python-codacy-coverage -r coverage.xml
   - flake8 
 
-
+notifications:
+  email:
+    - manuel4sfc@gmail.com
+    
+notifications:
+  email: true
+  
+notifications:
+  email:
+    recipients:
+      - manuel4sfc@gmail.com
+    on_success: always # default: change
+    on_failure: always # default: always 
 
