@@ -37,4 +37,10 @@ notifications:
       - manuel4sfc@gmail.com
     on_success: always # default: change
     on_failure: always # default: always 
+env:
+  - DJANGO_VERSION=2.1.13
+  - DJANGO_VERSION=2.2.6
+  
+install:
+  - pip install -q Django==$DJANGO_VERSION
 
